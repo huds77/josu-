@@ -1,0 +1,25 @@
+#CRIAR UM NOVO
+POST http://localhost:3333/client
+Content-Type: application/json
+
+{
+ "name": "bIDISIIJSF",
+ "email": "bbSFIIFISNb@gmail.com"
+} 
+
+### CONSULTAR TODOS
+GET http://localhost:3333/client
+
+### CONSULTAR UM ESPECIFICO
+GET http://localhost:3333/client/4
+
+### ATUALIZAR
+PUT http://localhost:3333/client/4
+
+{
+ "name": "bbAAAAbb",
+ "email": "NHBBBB@gmail.com"
+} 
+
+###
+DELETE http://localhost:3333/client/3
