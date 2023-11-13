@@ -55,4 +55,4 @@ app.delete("/client/:id", async (req, res) => {
 })
 
 
-app.listen(3333, ()=> console.log("Server Runnig"))
+app.listen(3333, ()=> console.log("Servidor rodando... "))
