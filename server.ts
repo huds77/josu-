@@ -12,7 +12,7 @@ app.get("/client", async (req, res) => {
   return res.json(clients)
 })
 
-app.get("/client/:id", async(req, res) => {
+app.get ("/client/:id", async(req, res) => {
   const client = await prisma.client.findFirst({
     where: {
       id: Number(req.params.id)
@@ -21,7 +21,7 @@ app.get("/client/:id", async(req, res) => {
   return res.json(client)
 })
 
-app.post("/client", async (req, res) => {
+app.post ("/client", async (req, res) => {
   const {name, email} = req.body
   const client = await prisma.client.create({
     data:{
